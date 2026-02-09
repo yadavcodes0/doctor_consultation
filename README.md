@@ -106,7 +106,7 @@ Below are a few screenshots showcasing the app UI.
 
 ### Home Screen
 
-<img src="assets/screenshots/home.png" alt="Home Screen" width="720" />
+<img src="assets/screenshots/home.png" alt="Home Screen" width="360" />
 
 ### Call Screen
 
