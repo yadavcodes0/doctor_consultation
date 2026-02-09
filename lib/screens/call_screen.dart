@@ -26,7 +26,8 @@ class _CallScreenState extends State<CallScreen> {
   void initState() {
     super.initState();
     userId = 'patient_${Random().nextInt(10000)}';
-    callId = 'consultation_${widget.doctor.id}_${DateTime.now().microsecondsSinceEpoch}';
+    callId =
+        'consultation_${widget.doctor.id}_${DateTime.now().microsecondsSinceEpoch}';
     _checkPermissions();
   }
 
@@ -43,7 +44,8 @@ class _CallScreenState extends State<CallScreen> {
 
     final statuses = await [Permission.camera, Permission.microphone].request();
     setState(() {
-      _granted = statuses[Permission.camera]?.isGranted == true &&
+      _granted =
+          statuses[Permission.camera]?.isGranted == true &&
           statuses[Permission.microphone]?.isGranted == true;
       _checking = false;
     });
@@ -62,7 +64,9 @@ class _CallScreenState extends State<CallScreen> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text('Camera and microphone permissions are required to make calls.'),
+              const Text(
+                'Camera and microphone permissions are required to make calls.',
+              ),
               const SizedBox(height: 12),
               ElevatedButton(
                 onPressed: _checkPermissions,
@@ -86,23 +90,24 @@ class _CallScreenState extends State<CallScreen> {
             isVisible: true,
             title: widget.doctor.name,
           )
-          ..avatarBuilder = (
-            BuildContext context,
-            Size size,
-            ZegoUIKitUser? user,
-            Map extraInfo,
-          ) {
-            return Container(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  image: NetworkImage(widget.doctor.imageUrl),
-                  fit: BoxFit.cover,
-                ),
-                border: Border.all(color: Color(0xFf00BFA5), width: 3),
-              ),
-            );
-          }
+          ..avatarBuilder =
+              (
+                BuildContext context,
+                Size size,
+                ZegoUIKitUser? user,
+                Map extraInfo,
+              ) {
+                return Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      image: NetworkImage(widget.doctor.imageUrl),
+                      fit: BoxFit.cover,
+                    ),
+                    border: Border.all(color: Color(0xFf00BFA5), width: 3),
+                  ),
+                );
+              }
           ..audioVideoView = ZegoCallAudioVideoViewConfig(
             showSoundWavesInAudioMode: true,
             useVideoViewAspectFill: true,
@@ -119,7 +124,11 @@ class _CallScreenState extends State<CallScreen> {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Icon(Icons.circle, color: Color(0xFF00BFA5), size: 8),
+                      const Icon(
+                        Icons.circle,
+                        color: Color(0xFF00BFA5),
+                        size: 8,
+                      ),
                       const SizedBox(width: 6),
                       Text(
                         user?.name ?? 'unknown',
