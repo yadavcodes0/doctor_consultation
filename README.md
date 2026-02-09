@@ -106,10 +106,8 @@ Below are a few screenshots showcasing the app UI.
 
 ### Home Screen
 
-![Home Screen](assets/screenshots/home.png)
+<img src="assets/screenshots/home.png" alt="Home Screen" width="720" />
 
 ### Call Screen
 
-![Call Screen](assets/screenshots/call_screen_1.png)
-
-![Call Screen](assets/screenshots/call_screen_2.png)
+<img src="assets/screenshots/call_screen_1.png" alt="Call Screen 1" width="360" /> <img src="assets/screenshots/call_screen_2.png" alt="Call Screen 2" width="360" />
