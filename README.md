@@ -4,6 +4,8 @@
 
 A premium, modern Flutter application for seamless doctor consultations and real-time video calls.
 
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-doctorconsultation.vercel.app-00BFA5?style=for-the-badge)](https://doctorconsultation.vercel.app)
+
 ## Features
 
 - 🏥 **Browse Doctors** - Explore a comprehensive list of doctors across different specialities

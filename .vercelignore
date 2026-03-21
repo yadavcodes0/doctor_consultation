@@ -1,4 +1,5 @@
-# Ignore everything except the web build output
+# Ignore everything except Flutter web build output
 *
+!build
 !build/web
 !build/web/**

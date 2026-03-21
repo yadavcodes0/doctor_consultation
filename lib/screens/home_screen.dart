@@ -1,4 +1,5 @@
 import 'package:doctor_consultation/models/doctor.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'call_screen.dart';
@@ -124,12 +125,21 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: ListView.builder(
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              itemCount: doctors.length,
-              itemBuilder: (context, index) {
-                return _buildDoctorCard(context, doctors[index]);
-              },
+            child: ScrollConfiguration(
+              behavior: ScrollConfiguration.of(
+                context,
+              ).copyWith(dragDevices: {
+                PointerDeviceKind.touch,
+                PointerDeviceKind.mouse,
+                PointerDeviceKind.trackpad,
+              }),
+              child: ListView.builder(
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                itemCount: doctors.length,
+                itemBuilder: (context, index) {
+                  return _buildDoctorCard(context, doctors[index]);
+                },
+              ),
             ),
           ),
         ],
