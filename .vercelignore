@@ -1,0 +1,4 @@
+# Ignore everything except the web build output
+*
+!build/web
+!build/web/**

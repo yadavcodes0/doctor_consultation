@@ -1,3 +1,9 @@
+# 🩺 DocConsult - Modern Doctor Consultation App
+
+![DocConsult Banner](banner.png)
+
+A premium, modern Flutter application for seamless doctor consultations and real-time video calls.
+
 ## Features
 
 - 🏥 **Browse Doctors** - Explore a comprehensive list of doctors across different specialities
@@ -106,8 +112,8 @@ Below are a few screenshots showcasing the app UI.
 
 ### Home Screen
 
-<img src="assets/screenshots/home.png" alt="Home Screen" width="360" />
+<img src="assets/screenshots/home.png" alt="Home Screen" width="200" />
 
 ### Call Screen
 
-<img src="assets/screenshots/call_screen_1.png" alt="Call Screen 1" width="360" /> <img src="assets/screenshots/call_screen_2.png" alt="Call Screen 2" width="360" />
+<img src="assets/screenshots/call_screen_1.png" alt="Call Screen 1" width="200" /> <img src="assets/screenshots/call_screen_2.png" alt="Call Screen 2" width="200" />
