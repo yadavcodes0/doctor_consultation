@@ -8,7 +8,7 @@ void main() {
   runApp(
     DevicePreview(
       enabled: kIsWeb,
-      defaultDevice: Devices.ios.iPhone16ProMax,
+      defaultDevice: Devices.ios.iPhone14ProMax,
       builder: (context) => const MyApp(),
     ),
   );
