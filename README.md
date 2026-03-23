@@ -53,7 +53,7 @@ lib/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/doctor_consultation.git
+   git clone https://github.com/yadavcodes0/doctor_consultation.git
    cd doctor_consultation
    ```
 
